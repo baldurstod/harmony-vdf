@@ -39,7 +39,7 @@ class KeyValue {
     }
 }
 
-function stringify(kv, { prettyPrint = true } = {}) {
+function stringifyVdf(kv, { prettyPrint = true } = {}) {
     let buffer = '';
     let indent = '';
     let objectStack = [];
@@ -95,7 +95,7 @@ const TOKEN_CLOSING_BRACE = 2;
 const TOKEN_NEW_LINE = 3;
 const TOKEN_STRING_VALUE = 4;
 const TOKEN_END = 5;
-function parse(source) {
+function parseVdf(source) {
     const reader = {
         s: source,
         offset: 0,
@@ -217,4 +217,4 @@ function getNextToken(reader) {
     return [TOKEN_END];
 }
 
-export { KeyValue, parse, stringify };
+export { KeyValue, parseVdf, stringifyVdf as stringify, stringifyVdf };

@@ -1,4 +1,4 @@
-export { stringify } from './stringify';
+export { stringifyVdf as stringify } from './stringify';
 import { KeyValue } from './keyvalue';
 
 const TOKEN_OPENING_BRACE = 1;
@@ -13,7 +13,7 @@ type Reader = {
 	len: number,
 }
 
-export function parse(source: string) {
+export function parseVdf(source: string) {
 	const reader = {
 		s: source,
 		offset: 0,

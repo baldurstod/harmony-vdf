@@ -1,6 +1,6 @@
 {
   "name": "harmony-vdf",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Valve Data Format reader in typescript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

@@ -1,6 +1,6 @@
 import { KeyValue, KeyValues } from './keyvalue';
 
-export function stringify(kv: KeyValue, { prettyPrint = true } = {}) {
+export function stringifyVdf(kv: KeyValue, { prettyPrint = true } = {}) {
 	let buffer = '';
 
 	let indent = '';
